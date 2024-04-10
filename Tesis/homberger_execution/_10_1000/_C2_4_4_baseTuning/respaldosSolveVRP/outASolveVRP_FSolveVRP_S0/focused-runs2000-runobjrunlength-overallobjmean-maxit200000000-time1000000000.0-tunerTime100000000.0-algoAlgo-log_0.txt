@@ -1,0 +1,1788 @@
+Call: /usr/bin/ruby ../scripts/param_ils_2_3_run.rb "-numRun" "0" "-approach" "focused" "-userunlog" "1" "-validN" "0" "-pruning" "0" "-maxEvals" "1000" "-scenariofile" "../_C2_4_4_baseTuning/scn/SolveVRP.scn"
+
+
+seed: 1234
+algo: bash SolveVRP.sh
+tunerTimeout (CPU time): 100000000.0
+maxWallTime: 8640000.0
+maxEvals: 1000
+run_obj: runlength
+overall_obj: mean
+instance_file: inst/single.inst
+test_instance_file: inst/single.inst
+N: 2000
+cutoff_time: 1000000000.0
+cutoff_length: 2147483647
+R: 10
+pertubation_strength_basic: 
+pertubation_strength_scaling: false
+p_restart: 0.01
+Run 1
+Level 
+========================================================
+Starting ILS for level 1, i.e. a limit of N=2000, and cutoff time=1000000000.0.
+Current CPU time = 0, this run goes until 100000000.0 
+========================================================
+New Incumbent: 0, 100000000 [0, 0]. With state gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 0.1, 3634.0 [1, 1000000000.0]. With state gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+New inc: 3588.0
+New Incumbent: 0.2, 3588.0 [1, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.2
+          -> Take improving step to random gs=70 nc=0.8 ne=0.8 ps=5 xi=0.2 (3588.0 [based on 1 runs with cutoff 1000000000.0])
+
+        -> Worse random: gs=20 nc=0.2 ne=0.4 ps=35 xi=0.8 (3603.0 [based on 1 runs with cutoff 1000000000.0])
+        -> Worse random: gs=100 nc=0.4 ne=0.4 ps=5 xi=0.1 (3635.0 [based on 1 runs with cutoff 1000000000.0])
+        -> Worse random: gs=100 nc=0.1 ne=0.2 ps=25 xi=0.1 (3725.0 [based on 1 runs with cutoff 1000000000.0])
+        -> Worse random: gs=70 nc=0.8 ne=0.4 ps=25 xi=0.6 (3676.0 [based on 1 runs with cutoff 1000000000.0])
+        -> Worse random: gs=70 nc=0.1 ne=0.2 ps=35 xi=0.1 (3736.0 [based on 1 runs with cutoff 1000000000.0])
+        -> Worse random: gs=70 nc=0.4 ne=0.6 ps=45 xi=0.2 (3691.0 [based on 1 runs with cutoff 1000000000.0])
+        -> Worse random: gs=70 nc=0.6 ne=0.6 ps=25 xi=0.2 (3674.0 [based on 1 runs with cutoff 1000000000.0])
+        -> Worse random: gs=70 nc=0.8 ne=0.4 ps=35 xi=0.8 (3691.0 [based on 1 runs with cutoff 1000000000.0])
+        -> Worse random: gs=20 nc=0.8 ne=0.1 ps=45 xi=0.2 (3731.0 [based on 1 runs with cutoff 1000000000.0])
+   BLS in iteration 1, start with gs=70 nc=0.8 ne=0.8 ps=5 xi=0.2 (3588.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.8->0.2"], evaluating ...
+        -> worse: (3604.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3673.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.6"], evaluating ...
+New inc: 3586.0
+New Incumbent: 1.4000000000000001, 3586.0 [1, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.6
+          -> Take improving step to neighbour gs=70 nc=0.8 ne=0.8 ps=5 xi=0.6 (3586.0 [based on 1 runs with cutoff 1000000000.0]) with flip 1
+
+          
+============= Performing 3 bonus runs of state: gs=70 nc=0.8 ne=0.8 ps=5 xi=0.6 (3586.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+ Same incumbent, new precision:
+New Incumbent: 1.5000000000000002, 3613.5 [2, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.6
+ Same incumbent, new precision:
+New Incumbent: 1.6000000000000003, 3611.6666666666665 [3, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.6
+ Same incumbent, new precision:
+New Incumbent: 1.7000000000000004, 3613.5 [4, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.6
+          -> After 3 bonus runs: gs=70 nc=0.8 ne=0.8 ps=5 xi=0.6 (3613.5 [based on 4 runs with cutoff 1000000000.0])
+
+    Changing ["ne: 0.8->0.2"], evaluating ...
+        -> worse: (3664.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.8->0.1"], evaluating ...
+        -> worse: (3622.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3684.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.8->0.4"], evaluating ...
+        -> worse: (3624.25 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.8->0.6"], evaluating ...
+        -> worse: (3618.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.8->0.6"], evaluating ...
+        -> worse: (3615.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.6->0.4"], evaluating ...
+New inc: 3595.75
+New Incumbent: 3.1000000000000014, 3595.75 [4, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+          -> Take improving step to neighbour gs=70 nc=0.8 ne=0.8 ps=5 xi=0.4 (3595.75 [based on 4 runs with cutoff 1000000000.0]) with flip 2
+
+          
+============= Performing 7 bonus runs of state: gs=70 nc=0.8 ne=0.8 ps=5 xi=0.4 (3595.75 [based on 4 runs with cutoff 1000000000.0]) ============ 
+
+ Same incumbent, new precision:
+New Incumbent: 3.2000000000000015, 3607.0 [5, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 3.3000000000000016, 3606.6666666666665 [6, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 3.4000000000000017, 3612.5714285714284 [7, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 3.5000000000000018, 3612.875 [8, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 3.600000000000002, 3611.4444444444443 [9, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 3.700000000000002, 3604.7 [10, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 3.800000000000002, 3609.4545454545455 [11, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+          -> After 7 bonus runs: gs=70 nc=0.8 ne=0.8 ps=5 xi=0.4 (3609.4545454545455 [based on 11 runs with cutoff 1000000000.0])
+
+    Changing ["xi: 0.4->0.8"], evaluating ...
+        -> worse: (3597.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3651.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3626.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 70->40"], evaluating ...
+        -> worse: (3582.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.8->0.4"], evaluating ...
+        -> worse: (3719.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.8->0.1"], evaluating ...
+        -> worse: (3607.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.8->0.4"], evaluating ...
+        -> worse: (3596.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.8->0.2"], evaluating ...
+        -> worse: (3592.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.8->0.1"], evaluating ...
+        -> worse: (3696.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.8->0.6"], evaluating ...
+        -> worse: (3581.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3628.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3676.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.8->0.2"], evaluating ...
+        -> worse: (3580.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 70->100"], evaluating ...
+        -> worse: (3595.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.8->0.6"], evaluating ...
+        -> worse: (3586.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 70->10"], evaluating ...
+        -> worse: (3683.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 70->20"], evaluating ...
+        -> worse: (3641.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3593.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 18 bonus runs of state: gs=70 nc=0.8 ne=0.8 ps=5 xi=0.4 (3609.4545454545455 [based on 11 runs with cutoff 1000000000.0]) ============ 
+
+ Same incumbent, new precision:
+New Incumbent: 5.699999999999996, 3610.3333333333335 [12, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 5.799999999999995, 3611.230769230769 [13, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 5.899999999999995, 3613.8571428571427 [14, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 5.999999999999995, 3612.4666666666667 [15, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 6.099999999999994, 3616.1875 [16, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 6.199999999999994, 3615.764705882353 [17, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 6.299999999999994, 3617.8888888888887 [18, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 6.399999999999993, 3614.6315789473683 [19, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 6.499999999999993, 3613.15 [20, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 6.5999999999999925, 3611.8571428571427 [21, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 6.699999999999992, 3611.1363636363635 [22, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 6.799999999999992, 3609.5652173913045 [23, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 6.8999999999999915, 3608.9166666666665 [24, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 6.999999999999991, 3608.2 [25, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 7.099999999999991, 3606.730769230769 [26, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 7.19999999999999, 3604.3703703703704 [27, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 7.29999999999999, 3605.785714285714 [28, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 7.39999999999999, 3605.3793103448274 [29, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+          -> After 18 bonus runs for LM: gs=70 nc=0.8 ne=0.8 ps=5 xi=0.4 (3605.3793103448274 [based on 29 runs with cutoff 1000000000.0])
+
+   LM for iteration 1: gs=70 nc=0.8 ne=0.8 ps=5 xi=0.4 (3605.3793103448274 [based on 29 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 1): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 1): gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3605.3793103448274, based on 29 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=70 nc=0.8 ne=0.8 ps=5 xi=0.4 (3605.3793103448274 [based on 29 runs with cutoff 1000000000.0])
+gs=70 nc=0.8 ne=0.8 ps=5 xi=0.4 (3605.3793103448274 [based on 29 runs with cutoff 1000000000.0])
+LM better, change incumbent
+New Incumbent: 7.39999999999999, 3605.3793103448274 [29, 1000000000.0]. With state gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+74/1000, 7.39999999999999/100000000.0
+iteration 2, flip 4, evaluation count 74
+    perturb to ---> gs=70 nc=0.8 ne=0.8 ps=5 xi=0.6 (3613.5 [based on 4 runs with cutoff 1000000000.0])
+    perturb to ---> gs=70 nc=0.6 ne=0.8 ps=5 xi=0.6 (3615.0 [based on 2 runs with cutoff 1000000000.0])
+    perturb to ---> gs=70 nc=0.6 ne=0.6 ps=5 xi=0.6 (100000000 [based on 0 runs with cutoff 0])
+   BLS in iteration 2, start with gs=70 nc=0.6 ne=0.6 ps=5 xi=0.6 (3660.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+          -> Take improving step to neighbour gs=70 nc=0.6 ne=0.6 ps=35 xi=0.6 (3631.0 [based on 1 runs with cutoff 1000000000.0]) with flip 4
+
+          
+============= Performing 1 bonus runs of state: gs=70 nc=0.6 ne=0.6 ps=35 xi=0.6 (3631.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=70 nc=0.6 ne=0.6 ps=35 xi=0.6 (3649.0 [based on 2 runs with cutoff 1000000000.0])
+
+    Changing ["xi: 0.6->0.4"], evaluating ...
+        -> worse: (3639.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.2"], evaluating ...
+        -> worse: (3642.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 70->10"], evaluating ...
+          -> Take improving step to neighbour gs=10 nc=0.6 ne=0.6 ps=35 xi=0.6 (3592.5 [based on 2 runs with cutoff 1000000000.0]) with flip 5
+
+          
+============= Performing 3 bonus runs of state: gs=10 nc=0.6 ne=0.6 ps=35 xi=0.6 (3592.5 [based on 2 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 3 bonus runs: gs=10 nc=0.6 ne=0.6 ps=35 xi=0.6 (3613.8 [based on 5 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 10->40"], evaluating ...
+        -> worse: (3612.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.6->0.8"], evaluating ...
+        -> worse: (3589.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.2"], evaluating ...
+        -> worse: (3670.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.6->0.4"], evaluating ...
+          -> Take improving step to neighbour gs=10 nc=0.4 ne=0.6 ps=35 xi=0.6 (3600.4 [based on 5 runs with cutoff 1000000000.0]) with flip 6
+
+          
+============= Performing 4 bonus runs of state: gs=10 nc=0.4 ne=0.6 ps=35 xi=0.6 (3600.4 [based on 5 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 4 bonus runs: gs=10 nc=0.4 ne=0.6 ps=35 xi=0.6 (3597.3333333333335 [based on 9 runs with cutoff 1000000000.0])
+
+    Changing ["nc: 0.4->0.8"], evaluating ...
+        -> worse: (3568.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.6->0.4"], evaluating ...
+        -> worse: (3651.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->20"], evaluating ...
+        -> worse: (3572.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.8"], evaluating ...
+        -> worse: (3596.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->100"], evaluating ...
+101/1000, 10.09999999999998/100000000.0
+        -> worse: (3700.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 35->15"], evaluating ...
+        -> worse: (3578.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->70"], evaluating ...
+        -> worse: (3647.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.4"], evaluating ...
+        -> worse: (3592.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.6->0.2"], evaluating ...
+        -> worse: (3574.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.1"], evaluating ...
+        -> worse: (3648.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->40"], evaluating ...
+        -> worse: (3624.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 35->25"], evaluating ...
+        -> worse: (3577.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 35->5"], evaluating ...
+        -> worse: (3627.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.6->0.1"], evaluating ...
+        -> worse: (3630.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.1"], evaluating ...
+        -> worse: (3556.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 35->45"], evaluating ...
+        -> worse: (3627.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.2"], evaluating ...
+        -> worse: (3596.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.2"], evaluating ...
+        -> worse: (3615.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.6->0.8"], evaluating ...
+        -> worse: (3634.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 19 bonus runs of state: gs=10 nc=0.4 ne=0.6 ps=35 xi=0.6 (3597.3333333333335 [based on 9 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 19 bonus runs for LM: gs=10 nc=0.4 ne=0.6 ps=35 xi=0.6 (3601.3571428571427 [based on 28 runs with cutoff 1000000000.0])
+
+   LM for iteration 2: gs=10 nc=0.4 ne=0.6 ps=35 xi=0.6 (3601.3571428571427 [based on 28 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 2): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 2): gs=70, nc=0.8, ne=0.8, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3605.3793103448274, based on 29 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=10 nc=0.4 ne=0.6 ps=35 xi=0.6 (3601.3571428571427 [based on 28 runs with cutoff 1000000000.0])
+gs=70 nc=0.8 ne=0.8 ps=5 xi=0.4 (3605.3793103448274 [based on 29 runs with cutoff 1000000000.0])
+New inc: 3601.6206896551726
+New Incumbent: 13.499999999999968, 3601.6206896551726 [29, 1000000000.0]. With state gs=10, nc=0.4, ne=0.6, ps=35, xi=0.6
+LM better, change incumbent
+New Incumbent: 13.499999999999968, 3601.6206896551726 [29, 1000000000.0]. With state gs=10, nc=0.4, ne=0.6, ps=35, xi=0.6
+   Accepting new better local optimum: gs=10 nc=0.4 ne=0.6 ps=35 xi=0.6 (3601.6206896551726 [based on 29 runs with cutoff 1000000000.0])
+135/1000, 13.499999999999968/100000000.0
+iteration 3, flip 8, evaluation count 135
+    perturb to ---> gs=10 nc=0.4 ne=0.6 ps=5 xi=0.6 (3627.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=10 nc=0.4 ne=0.6 ps=5 xi=0.2 (100000000 [based on 0 runs with cutoff 0])
+    perturb to ---> gs=10 nc=0.4 ne=0.2 ps=5 xi=0.2 (100000000 [based on 0 runs with cutoff 0])
+   BLS in iteration 3, start with gs=10 nc=0.4 ne=0.2 ps=5 xi=0.2 (3537.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3660.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.1"], evaluating ...
+        -> worse: (3548.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->70"], evaluating ...
+        -> worse: (3582.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.8"], evaluating ...
+        -> worse: (3644.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3604.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->100"], evaluating ...
+        -> worse: (3585.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.1"], evaluating ...
+        -> worse: (3848.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.6"], evaluating ...
+        -> worse: (3633.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.2"], evaluating ...
+        -> worse: (3587.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.4"], evaluating ...
+        -> worse: (3555.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3657.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.6"], evaluating ...
+        -> worse: (3641.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->20"], evaluating ...
+        -> worse: (3580.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.8"], evaluating ...
+        -> worse: (3642.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+        -> worse: (3620.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3592.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.1"], evaluating ...
+        -> worse: (3595.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.8"], evaluating ...
+        -> worse: (3562.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->40"], evaluating ...
+        -> worse: (3660.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.6"], evaluating ...
+        -> worse: (3574.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 20 bonus runs of state: gs=10 nc=0.4 ne=0.2 ps=5 xi=0.2 (3537.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 20 bonus runs for LM: gs=10 nc=0.4 ne=0.2 ps=5 xi=0.2 (3600.0 [based on 21 runs with cutoff 1000000000.0])
+
+   LM for iteration 3: gs=10 nc=0.4 ne=0.2 ps=5 xi=0.2 (3600.0 [based on 21 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 3): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 3): gs=10, nc=0.4, ne=0.6, ps=35, xi=0.6
+==================================================================
+Training quality of this incumbent parameter configuration: 3601.6206896551726, based on 29 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=10 nc=0.4 ne=0.2 ps=5 xi=0.2 (3600.0 [based on 21 runs with cutoff 1000000000.0])
+gs=10 nc=0.4 ne=0.6 ps=35 xi=0.6 (3601.6206896551726 [based on 29 runs with cutoff 1000000000.0])
+Incumbent better, keeping it
+rejecting worse gs=10 nc=0.4 ne=0.2 ps=5 xi=0.2 (3604.153846153846 [based on 26 runs with cutoff 1000000000.0]), going back to gs=10 nc=0.4 ne=0.6 ps=35 xi=0.6 (3601.6206896551726 [based on 29 runs with cutoff 1000000000.0])
+181/1000, 18.099999999999987/100000000.0
+iteration 4, flip 9, evaluation count 181
+    perturb to ---> gs=10 nc=0.4 ne=0.6 ps=35 xi=0.4 (3651.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=10 nc=0.4 ne=0.6 ps=5 xi=0.4 (100000000 [based on 0 runs with cutoff 0])
+    perturb to ---> gs=10 nc=0.2 ne=0.6 ps=5 xi=0.4 (100000000 [based on 0 runs with cutoff 0])
+   BLS in iteration 4, start with gs=10 nc=0.2 ne=0.6 ps=5 xi=0.4 (3627.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.2"], evaluating ...
+        -> worse: (3645.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3854.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.1"], evaluating ...
+          -> Take improving step to neighbour gs=10 nc=0.2 ne=0.1 ps=5 xi=0.4 (3586.0 [based on 1 runs with cutoff 1000000000.0]) with flip 9
+
+          
+============= Performing 3 bonus runs of state: gs=10 nc=0.2 ne=0.1 ps=5 xi=0.4 (3586.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 3 bonus runs: gs=10 nc=0.2 ne=0.1 ps=5 xi=0.4 (3578.0 [based on 4 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3688.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.1->0.8"], evaluating ...
+        -> worse: (3657.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.2"], evaluating ...
+        -> worse: (3589.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.8"], evaluating ...
+        -> worse: (3631.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->20"], evaluating ...
+        -> worse: (3647.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3647.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->70"], evaluating ...
+        -> worse: (3697.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->40"], evaluating ...
+        -> worse: (3646.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.6"], evaluating ...
+        -> worse: (3643.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3624.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.1"], evaluating ...
+        -> worse: (3794.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.1->0.2"], evaluating ...
+201/1000, 20.100000000000016/100000000.0
+          -> Take improving step to neighbour gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3574.25 [based on 4 runs with cutoff 1000000000.0]) with flip 10
+
+          
+============= Performing 12 bonus runs of state: gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3574.25 [based on 4 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 12 bonus runs: gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.0625 [based on 16 runs with cutoff 1000000000.0])
+
+    Changing ["ne: 0.2->0.4"], evaluating ...
+        -> worse: (3617.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->100"], evaluating ...
+        -> worse: (3649.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.4"], evaluating ...
+        -> worse: (3553.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->40"], evaluating ...
+        -> worse: (3578.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3680.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.8"], evaluating ...
+        -> worse: (3595.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.6"], evaluating ...
+        -> worse: (3615.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->70"], evaluating ...
+        -> worse: (3615.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.6"], evaluating ...
+        -> worse: (3576.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.2"], evaluating ...
+        -> worse: (3589.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3662.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3672.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->20"], evaluating ...
+        -> worse: (3583.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3572.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3593.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.1"], evaluating ...
+        -> worse: (3794.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.8"], evaluating ...
+        -> worse: (3546.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 17 bonus runs of state: gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.0625 [based on 16 runs with cutoff 1000000000.0]) ============ 
+
+New inc: 3581.862068965517
+New Incumbent: 24.60000000000008, 3581.862068965517 [29, 1000000000.0]. With state gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 24.70000000000008, 3581.866666666667 [30, 1000000000.0]. With state gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 24.800000000000082, 3584.7419354838707 [31, 1000000000.0]. With state gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 24.900000000000084, 3583.40625 [32, 1000000000.0]. With state gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 25.000000000000085, 3584.151515151515 [33, 1000000000.0]. With state gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+          -> After 17 bonus runs for LM: gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+
+   LM for iteration 4: gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 4): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 4): gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3584.151515151515, based on 33 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+LM better, change incumbent
+New Incumbent: 25.000000000000085, 3584.151515151515 [33, 1000000000.0]. With state gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+   Accepting new better local optimum: gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+250/1000, 25.000000000000085/100000000.0
+iteration 5, flip 12, evaluation count 250
+    perturb to ---> gs=10 nc=0.2 ne=0.2 ps=25 xi=0.4 (3593.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=10 nc=0.2 ne=0.2 ps=15 xi=0.4 (3572.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=10 nc=0.2 ne=0.2 ps=15 xi=0.8 (100000000 [based on 0 runs with cutoff 0])
+   BLS in iteration 5, start with gs=10 nc=0.2 ne=0.2 ps=15 xi=0.8 (3569.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+        -> worse: (3643.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.1"], evaluating ...
+        -> worse: (3657.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.1"], evaluating ...
+        -> worse: (3580.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.1"], evaluating ...
+          -> Take improving step to neighbour gs=10 nc=0.2 ne=0.1 ps=15 xi=0.8 (3551.0 [based on 1 runs with cutoff 1000000000.0]) with flip 12
+
+          
+============= Performing 4 bonus runs of state: gs=10 nc=0.2 ne=0.1 ps=15 xi=0.8 (3551.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 4 bonus runs: gs=10 nc=0.2 ne=0.1 ps=15 xi=0.8 (3604.8 [based on 5 runs with cutoff 1000000000.0])
+
+    Changing ["nc: 0.2->0.8"], evaluating ...
+        -> worse: (3637.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.4"], evaluating ...
+        -> worse: (3602.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.4"], evaluating ...
+        -> worse: (3647.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->70"], evaluating ...
+        -> worse: (3724.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.1->0.8"], evaluating ...
+        -> worse: (3592.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->100"], evaluating ...
+        -> worse: (3688.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->5"], evaluating ...
+        -> worse: (3621.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->45"], evaluating ...
+        -> worse: (3714.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->25"], evaluating ...
+        -> worse: (3636.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->40"], evaluating ...
+        -> worse: (3604.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.1->0.6"], evaluating ...
+          -> Take improving step to neighbour gs=10 nc=0.2 ne=0.6 ps=15 xi=0.8 (3586.4 [based on 5 runs with cutoff 1000000000.0]) with flip 13
+
+          
+============= Performing 11 bonus runs of state: gs=10 nc=0.2 ne=0.6 ps=15 xi=0.8 (3586.4 [based on 5 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 11 bonus runs: gs=10 nc=0.2 ne=0.6 ps=15 xi=0.8 (3592.625 [based on 16 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 15->5"], evaluating ...
+        -> worse: (3624.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->100"], evaluating ...
+        -> worse: (3667.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->35"], evaluating ...
+        -> worse: (3595.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->70"], evaluating ...
+        -> worse: (3608.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->25"], evaluating ...
+        -> worse: (3590.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->40"], evaluating ...
+        -> worse: (3643.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.2"], evaluating ...
+        -> worse: (3574.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.8"], evaluating ...
+        -> worse: (3577.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.6"], evaluating ...
+        -> worse: (3665.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.1"], evaluating ...
+        -> worse: (3677.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.6"], evaluating ...
+        -> worse: (3615.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.1"], evaluating ...
+        -> worse: (3608.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->20"], evaluating ...
+        -> worse: (3576.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.4"], evaluating ...
+        -> worse: (3671.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->45"], evaluating ...
+        -> worse: (3643.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.4"], evaluating ...
+301/1000, 30.100000000000158/100000000.0
+        -> worse: (3655.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 16 bonus runs of state: gs=10 nc=0.2 ne=0.6 ps=15 xi=0.8 (3592.625 [based on 16 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 16 bonus runs for LM: gs=10 nc=0.2 ne=0.6 ps=15 xi=0.8 (3592.1875 [based on 32 runs with cutoff 1000000000.0])
+
+   LM for iteration 5: gs=10 nc=0.2 ne=0.6 ps=15 xi=0.8 (3592.1875 [based on 32 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 5): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 5): gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3584.151515151515, based on 33 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=10 nc=0.2 ne=0.6 ps=15 xi=0.8 (3592.1875 [based on 32 runs with cutoff 1000000000.0])
+gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+Incumbent better, keeping it
+rejecting worse gs=10 nc=0.2 ne=0.6 ps=15 xi=0.8 (3592.1875 [based on 32 runs with cutoff 1000000000.0]), going back to gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+317/1000, 31.70000000000018/100000000.0
+iteration 6, flip 15, evaluation count 317
+    perturb to ---> gs=100 nc=0.2 ne=0.2 ps=5 xi=0.4 (3649.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=100 nc=0.2 ne=0.2 ps=5 xi=0.8 (100000000 [based on 0 runs with cutoff 0])
+    perturb to ---> gs=100 nc=0.2 ne=0.2 ps=5 xi=0.1 (100000000 [based on 0 runs with cutoff 0])
+   BLS in iteration 6, start with gs=100 nc=0.2 ne=0.2 ps=5 xi=0.1 (3651.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+          -> Take improving step to neighbour gs=100 nc=0.2 ne=0.4 ps=5 xi=0.1 (3648.0 [based on 1 runs with cutoff 1000000000.0]) with flip 15
+
+          
+============= Performing 1 bonus runs of state: gs=100 nc=0.2 ne=0.4 ps=5 xi=0.1 (3648.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=100 nc=0.2 ne=0.4 ps=5 xi=0.1 (3699.0 [based on 2 runs with cutoff 1000000000.0])
+
+    Changing ["xi: 0.1->0.6"], evaluating ...
+          -> Take improving step to neighbour gs=100 nc=0.2 ne=0.4 ps=5 xi=0.6 (3676.0 [based on 2 runs with cutoff 1000000000.0]) with flip 16
+
+          
+============= Performing 1 bonus runs of state: gs=100 nc=0.2 ne=0.4 ps=5 xi=0.6 (3676.0 [based on 2 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=100 nc=0.2 ne=0.4 ps=5 xi=0.6 (3665.0 [based on 3 runs with cutoff 1000000000.0])
+
+    Changing ["xi: 0.6->0.8"], evaluating ...
+          -> Take improving step to neighbour gs=100 nc=0.2 ne=0.4 ps=5 xi=0.8 (3639.6666666666665 [based on 3 runs with cutoff 1000000000.0]) with flip 17
+
+          
+============= Performing 1 bonus runs of state: gs=100 nc=0.2 ne=0.4 ps=5 xi=0.8 (3639.6666666666665 [based on 3 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=100 nc=0.2 ne=0.4 ps=5 xi=0.8 (3635.75 [based on 4 runs with cutoff 1000000000.0])
+
+    Changing ["xi: 0.8->0.2"], evaluating ...
+        -> worse: (3700.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.4->0.6"], evaluating ...
+          -> Take improving step to neighbour gs=100 nc=0.2 ne=0.6 ps=5 xi=0.8 (3593.25 [based on 4 runs with cutoff 1000000000.0]) with flip 18
+
+          
+============= Performing 2 bonus runs of state: gs=100 nc=0.2 ne=0.6 ps=5 xi=0.8 (3593.25 [based on 4 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 2 bonus runs: gs=100 nc=0.2 ne=0.6 ps=5 xi=0.8 (3598.8333333333335 [based on 6 runs with cutoff 1000000000.0])
+
+    Changing ["nc: 0.2->0.8"], evaluating ...
+        -> worse: (3583.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.4"], evaluating ...
+        -> worse: (3627.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.1"], evaluating ...
+        -> worse: (3621.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 100->70"], evaluating ...
+        -> worse: (3598.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.6"], evaluating ...
+        -> worse: (3644.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.8"], evaluating ...
+        -> worse: (3692.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.2"], evaluating ...
+        -> worse: (3733.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.6"], evaluating ...
+        -> worse: (3691.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.2"], evaluating ...
+        -> worse: (3657.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.4"], evaluating ...
+        -> worse: (3612.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3616.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.1"], evaluating ...
+        -> worse: (3679.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3712.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 100->10"], evaluating ...
+        -> worse: (3665.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 100->40"], evaluating ...
+        -> worse: (3575.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3645.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 100->20"], evaluating ...
+        -> worse: (3588.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3701.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.1"], evaluating ...
+        -> worse: (3668.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 19 bonus runs of state: gs=100 nc=0.2 ne=0.6 ps=5 xi=0.8 (3598.8333333333335 [based on 6 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 19 bonus runs for LM: gs=100 nc=0.2 ne=0.6 ps=5 xi=0.8 (3627.28 [based on 25 runs with cutoff 1000000000.0])
+
+   LM for iteration 6: gs=100 nc=0.2 ne=0.6 ps=5 xi=0.8 (3627.28 [based on 25 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 6): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 6): gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3584.151515151515, based on 33 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=100 nc=0.2 ne=0.6 ps=5 xi=0.8 (3627.28 [based on 25 runs with cutoff 1000000000.0])
+gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+Incumbent better, keeping it
+rejecting worse gs=100 nc=0.2 ne=0.6 ps=5 xi=0.8 (3627.28 [based on 25 runs with cutoff 1000000000.0]), going back to gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+372/1000, 37.20000000000026/100000000.0
+iteration 7, flip 20, evaluation count 372
+    perturb to ---> gs=40 nc=0.2 ne=0.2 ps=5 xi=0.4 (3578.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=40 nc=0.4 ne=0.2 ps=5 xi=0.4 (100000000 [based on 0 runs with cutoff 0])
+    perturb to ---> gs=40 nc=0.4 ne=0.2 ps=25 xi=0.4 (100000000 [based on 0 runs with cutoff 0])
+   BLS in iteration 7, start with gs=40 nc=0.4 ne=0.2 ps=25 xi=0.4 (3602.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.2"], evaluating ...
+        -> worse: (3640.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 40->20"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.4 ne=0.2 ps=25 xi=0.4 (3601.0 [based on 1 runs with cutoff 1000000000.0]) with flip 20
+
+          
+============= Performing 2 bonus runs of state: gs=20 nc=0.4 ne=0.2 ps=25 xi=0.4 (3601.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 2 bonus runs: gs=20 nc=0.4 ne=0.2 ps=25 xi=0.4 (3599.3333333333335 [based on 3 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3675.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 25->45"], evaluating ...
+        -> worse: (3698.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3632.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.6"], evaluating ...
+        -> worse: (3621.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.1"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3596.0 [based on 3 runs with cutoff 1000000000.0]) with flip 21
+
+          
+============= Performing 5 bonus runs of state: gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3596.0 [based on 3 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 5 bonus runs: gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3619.125 [based on 8 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 25->35"], evaluating ...
+        -> worse: (3598.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 25->15"], evaluating ...
+        -> worse: (3584.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 25->45"], evaluating ...
+        -> worse: (3642.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.6"], evaluating ...
+        -> worse: (3637.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.8"], evaluating ...
+        -> worse: (3631.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3640.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.8"], evaluating ...
+        -> worse: (3633.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.6"], evaluating ...
+        -> worse: (3575.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->10"], evaluating ...
+        -> worse: (3591.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->70"], evaluating ...
+        -> worse: (3689.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.1->0.2"], evaluating ...
+401/1000, 40.1000000000003/100000000.0
+        -> worse: (3600.0 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["ps: 25->5"], evaluating ...
+        -> worse: (3667.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.2"], evaluating ...
+        -> worse: (3595.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.1"], evaluating ...
+        -> worse: (3664.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+        -> worse: (3605.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3653.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.1->0.8"], evaluating ...
+        -> worse: (3628.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3693.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 18 bonus runs of state: gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3619.125 [based on 8 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 18 bonus runs for LM: gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3603.8076923076924 [based on 26 runs with cutoff 1000000000.0])
+
+   LM for iteration 7: gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3603.8076923076924 [based on 26 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 7): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 7): gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3584.151515151515, based on 33 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3603.8076923076924 [based on 26 runs with cutoff 1000000000.0])
+gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+Incumbent better, keeping it
+rejecting worse gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3603.8076923076924 [based on 26 runs with cutoff 1000000000.0]), going back to gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+428/1000, 42.80000000000034/100000000.0
+iteration 8, flip 23, evaluation count 428
+    perturb to ---> gs=20 nc=0.2 ne=0.2 ps=5 xi=0.4 (3583.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=20 nc=0.2 ne=0.2 ps=5 xi=0.1 (100000000 [based on 0 runs with cutoff 0])
+    perturb to ---> gs=20 nc=0.6 ne=0.2 ps=5 xi=0.1 (100000000 [based on 0 runs with cutoff 0])
+   BLS in iteration 8, start with gs=20 nc=0.6 ne=0.2 ps=5 xi=0.1 (3720.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.1->0.4"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.6 ne=0.2 ps=5 xi=0.4 (3547.0 [based on 1 runs with cutoff 1000000000.0]) with flip 23
+
+          
+============= Performing 1 bonus runs of state: gs=20 nc=0.6 ne=0.2 ps=5 xi=0.4 (3547.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=20 nc=0.6 ne=0.2 ps=5 xi=0.4 (3575.5 [based on 2 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3575.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.6->0.1"], evaluating ...
+        -> worse: (3659.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3602.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.6->0.8"], evaluating ...
+        -> worse: (3586.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+        -> worse: (3581.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->70"], evaluating ...
+        -> worse: (3611.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->10"], evaluating ...
+        -> worse: (3607.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3609.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3592.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.6->0.4"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3546.5 [based on 2 runs with cutoff 1000000000.0]) with flip 24
+
+          
+============= Performing 10 bonus runs of state: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3546.5 [based on 2 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 10 bonus runs: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3565.4166666666665 [based on 12 runs with cutoff 1000000000.0])
+
+    Changing ["ne: 0.2->0.1"], evaluating ...
+        -> worse: (3652.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3677.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+        -> worse: (3583.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3718.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->70"], evaluating ...
+        -> worse: (3594.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.2"], evaluating ...
+        -> worse: (3585.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.2"], evaluating ...
+        -> worse: (3590.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.8"], evaluating ...
+        -> worse: (3651.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3590.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.8"], evaluating ...
+        -> worse: (3638.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->10"], evaluating ...
+        -> worse: (3561.3333333333335 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3641.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3600.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3606.25 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.6"], evaluating ...
+        -> worse: (3632.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.6"], evaluating ...
+        -> worse: (3564.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3612.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 17 bonus runs of state: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3565.4166666666665 [based on 12 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 17 bonus runs for LM: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3564.0 [based on 29 runs with cutoff 1000000000.0])
+
+   LM for iteration 8: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3564.0 [based on 29 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 8): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 8): gs=10, nc=0.2, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3584.151515151515, based on 33 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3564.0 [based on 29 runs with cutoff 1000000000.0])
+gs=10 nc=0.2 ne=0.2 ps=5 xi=0.4 (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+New inc: 3562.060606060606
+New Incumbent: 49.000000000000426, 3562.060606060606 [33, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+LM better, change incumbent
+New Incumbent: 49.000000000000426, 3562.060606060606 [33, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+   Accepting new better local optimum: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3562.060606060606 [based on 33 runs with cutoff 1000000000.0])
+490/1000, 49.000000000000426/100000000.0
+iteration 9, flip 26, evaluation count 490
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=5 xi=0.2 (3585.0 [based on 2 runs with cutoff 1000000000.0])
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=45 xi=0.2 (100000000 [based on 0 runs with cutoff 0])
+    perturb to ---> gs=20 nc=0.4 ne=0.4 ps=45 xi=0.2 (100000000 [based on 0 runs with cutoff 0])
+   BLS in iteration 9, start with gs=20 nc=0.4 ne=0.4 ps=45 xi=0.2 (3678.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.2"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.2 ne=0.4 ps=45 xi=0.2 (3621.0 [based on 1 runs with cutoff 1000000000.0]) with flip 26
+
+          
+============= Performing 1 bonus runs of state: gs=20 nc=0.2 ne=0.4 ps=45 xi=0.2 (3621.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=20 nc=0.2 ne=0.4 ps=45 xi=0.2 (3612.5 [based on 2 runs with cutoff 1000000000.0])
+
+    Changing ["xi: 0.2->0.6"], evaluating ...
+        -> worse: (3665.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 45->25"], evaluating ...
+        -> worse: (3648.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.1"], evaluating ...
+        -> worse: (3689.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 45->15"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.2 ne=0.4 ps=15 xi=0.2 (3596.5 [based on 2 runs with cutoff 1000000000.0]) with flip 27
+
+          
+============= Performing 4 bonus runs of state: gs=20 nc=0.2 ne=0.4 ps=15 xi=0.2 (3596.5 [based on 2 runs with cutoff 1000000000.0]) ============ 
+
+501/1000, 50.10000000000044/100000000.0
+          -> After 4 bonus runs: gs=20 nc=0.2 ne=0.4 ps=15 xi=0.2 (3592.6666666666665 [based on 6 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 15->35"], evaluating ...
+        -> worse: (3597.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.6"], evaluating ...
+        -> worse: (3624.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->10"], evaluating ...
+        -> worse: (3596.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.1"], evaluating ...
+        -> worse: (3552.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.8"], evaluating ...
+        -> worse: (3665.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3698.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.8"], evaluating ...
+        -> worse: (3583.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.6"], evaluating ...
+        -> worse: (3648.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.4->0.1"], evaluating ...
+        -> worse: (3642.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.4->0.8"], evaluating ...
+        -> worse: (3594.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.4->0.6"], evaluating ...
+        -> worse: (3609.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.4"], evaluating ...
+        -> worse: (3605.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->5"], evaluating ...
+        -> worse: (3570.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.4"], evaluating ...
+        -> worse: (3620.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3606.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.4->0.2"], evaluating ...
+        -> worse: (3607.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->70"], evaluating ...
+        -> worse: (3640.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.1"], evaluating ...
+        -> worse: (3672.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 18 bonus runs of state: gs=20 nc=0.2 ne=0.4 ps=15 xi=0.2 (3592.6666666666665 [based on 6 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 18 bonus runs for LM: gs=20 nc=0.2 ne=0.4 ps=15 xi=0.2 (3591.5 [based on 24 runs with cutoff 1000000000.0])
+
+   LM for iteration 9: gs=20 nc=0.2 ne=0.4 ps=15 xi=0.2 (3591.5 [based on 24 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 9): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 9): gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3562.060606060606, based on 33 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=20 nc=0.2 ne=0.4 ps=15 xi=0.2 (3591.5 [based on 24 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3562.060606060606 [based on 33 runs with cutoff 1000000000.0])
+Incumbent better, keeping it
+rejecting worse gs=20 nc=0.2 ne=0.4 ps=15 xi=0.2 (3591.5 [based on 24 runs with cutoff 1000000000.0]), going back to gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3562.060606060606 [based on 33 runs with cutoff 1000000000.0])
+538/1000, 53.800000000000495/100000000.0
+iteration 10, flip 29, evaluation count 538
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=5 xi=0.8 (3638.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=45 xi=0.8 (100000000 [based on 0 runs with cutoff 0])
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=5 xi=0.8 (3638.0 [based on 1 runs with cutoff 1000000000.0])
+   BLS in iteration 10, start with gs=20 nc=0.4 ne=0.2 ps=5 xi=0.8 (3605.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.4 ne=0.2 ps=15 xi=0.8 (3577.5 [based on 2 runs with cutoff 1000000000.0]) with flip 29
+
+          
+============= Performing 1 bonus runs of state: gs=20 nc=0.4 ne=0.2 ps=15 xi=0.8 (3577.5 [based on 2 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=20 nc=0.4 ne=0.2 ps=15 xi=0.8 (3586.3333333333335 [based on 3 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3648.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.2"], evaluating ...
+        -> worse: (3591.6666666666665 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.8"], evaluating ...
+        -> worse: (3594.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->70"], evaluating ...
+        -> worse: (3719.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.6"], evaluating ...
+        -> worse: (3622.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.8"], evaluating ...
+        -> worse: (3616.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.6"], evaluating ...
+        -> worse: (3578.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.6"], evaluating ...
+        -> worse: (3595.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.1"], evaluating ...
+        -> worse: (3593.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->10"], evaluating ...
+        -> worse: (3585.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3689.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->25"], evaluating ...
+        -> worse: (3593.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->45"], evaluating ...
+        -> worse: (3762.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.4 ne=0.4 ps=15 xi=0.8 (3568.3333333333335 [based on 3 runs with cutoff 1000000000.0]) with flip 30
+
+          
+============= Performing 14 bonus runs of state: gs=20 nc=0.4 ne=0.4 ps=15 xi=0.8 (3568.3333333333335 [based on 3 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 14 bonus runs: gs=20 nc=0.4 ne=0.4 ps=15 xi=0.8 (3582.529411764706 [based on 17 runs with cutoff 1000000000.0])
+
+    Changing ["nc: 0.4->0.6"], evaluating ...
+        -> worse: (3597.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3669.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.1"], evaluating ...
+        -> worse: (3561.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.2"], evaluating ...
+        -> worse: (3593.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->25"], evaluating ...
+        -> worse: (3562.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->45"], evaluating ...
+        -> worse: (3626.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3700.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->5"], evaluating ...
+        -> worse: (3577.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 15->35"], evaluating ...
+        -> worse: (3608.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.4"], evaluating ...
+        -> worse: (3635.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->10"], evaluating ...
+        -> worse: (3551.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.2"], evaluating ...
+        -> worse: (3584.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.1"], evaluating ...
+        -> worse: (3596.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.6"], evaluating ...
+        -> worse: (3590.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.8"], evaluating ...
+        -> worse: (3549.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->70"], evaluating ...
+        -> worse: (3658.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 16 bonus runs of state: gs=20 nc=0.4 ne=0.4 ps=15 xi=0.8 (3582.529411764706 [based on 17 runs with cutoff 1000000000.0]) ============ 
+
+601/1000, 60.100000000000584/100000000.0
+          -> After 16 bonus runs for LM: gs=20 nc=0.4 ne=0.4 ps=15 xi=0.8 (3592.3333333333335 [based on 33 runs with cutoff 1000000000.0])
+
+   LM for iteration 10: gs=20 nc=0.4 ne=0.4 ps=15 xi=0.8 (3592.3333333333335 [based on 33 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 10): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 10): gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3562.060606060606, based on 33 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=20 nc=0.4 ne=0.4 ps=15 xi=0.8 (3592.3333333333335 [based on 33 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3562.060606060606 [based on 33 runs with cutoff 1000000000.0])
+Incumbent better, keeping it
+rejecting worse gs=20 nc=0.4 ne=0.4 ps=15 xi=0.8 (3592.3333333333335 [based on 33 runs with cutoff 1000000000.0]), going back to gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3562.060606060606 [based on 33 runs with cutoff 1000000000.0])
+610/1000, 61.0000000000006/100000000.0
+iteration 11, flip 32, evaluation count 610
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=5 xi=0.6 (3564.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3562.060606060606 [based on 33 runs with cutoff 1000000000.0])
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=25 xi=0.4 (3606.25 [based on 4 runs with cutoff 1000000000.0])
+   BLS in iteration 11, start with gs=20 nc=0.4 ne=0.2 ps=25 xi=0.4 (3596.8 [based on 5 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.1"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3603.8076923076924 [based on 26 runs with cutoff 1000000000.0]) with flip 32
+
+          
+============= Performing 1 bonus runs of state: gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3603.8076923076924 [based on 26 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3603.5185185185187 [based on 27 runs with cutoff 1000000000.0])
+
+    Changing ["xi: 0.4->0.8"], evaluating ...
+        -> worse: (3625.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 25->35"], evaluating ...
+        -> worse: (3598.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.8"], evaluating ...
+        -> worse: (3593.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 25->45"], evaluating ...
+        -> worse: (3657.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.1"], evaluating ...
+        -> worse: (3616.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.1->0.8"], evaluating ...
+        -> worse: (3592.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3618.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.2"], evaluating ...
+        -> worse: (3586.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.1->0.2"], evaluating ...
+        -> worse: (3611.25 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->70"], evaluating ...
+        -> worse: (3678.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+        -> worse: (3586.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->10"], evaluating ...
+        -> worse: (3605.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.6"], evaluating ...
+        -> worse: (3616.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.6"], evaluating ...
+        -> worse: (3578.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3705.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3662.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 25->5"], evaluating ...
+        -> worse: (3642.0 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.1->0.6"], evaluating ...
+        -> worse: (3601.0 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["ps: 25->15"], evaluating ...
+        -> worse: (3601.0 [based on 2 runs with cutoff 1000000000.0])
+          
+============= Performing 19 bonus runs of state: gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3603.5185185185187 [based on 27 runs with cutoff 1000000000.0]) ============ 
+
+State wants more detail (33+1) than incumbent (33), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3606.878787878788 [based on 33 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3562.060606060606 [based on 33 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 65.10000000000058, 3562.823529411765 [34, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (34+1) than incumbent (34), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3606.5 [based on 34 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3562.823529411765 [based on 34 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 65.30000000000057, 3563.6857142857143 [35, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (35+1) than incumbent (35), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3605.942857142857 [based on 35 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3563.6857142857143 [based on 35 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 65.50000000000055, 3563.1666666666665 [36, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (36+1) than incumbent (36), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3605.722222222222 [based on 36 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3563.1666666666665 [based on 36 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 65.70000000000054, 3563.5675675675675 [37, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (37+1) than incumbent (37), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3606.2162162162163 [based on 37 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3563.5675675675675 [based on 37 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 65.90000000000053, 3563.315789473684 [38, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (38+1) than incumbent (38), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3606.7105263157896 [based on 38 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3563.315789473684 [based on 38 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 66.10000000000052, 3563.7179487179487 [39, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (39+1) than incumbent (39), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3607.1794871794873 [based on 39 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3563.7179487179487 [based on 39 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 66.30000000000051, 3563.325 [40, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (40+1) than incumbent (40), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3609.375 [based on 40 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3563.325 [based on 40 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 66.5000000000005, 3563.512195121951 [41, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (41+1) than incumbent (41), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3607.878048780488 [based on 41 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3563.512195121951 [based on 41 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 66.70000000000049, 3564.0238095238096 [42, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (42+1) than incumbent (42), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3607.5714285714284 [based on 42 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3564.0238095238096 [based on 42 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 66.90000000000047, 3564.767441860465 [43, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (43+1) than incumbent (43), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3607.1627906976746 [based on 43 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3564.767441860465 [based on 43 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 67.10000000000046, 3564.340909090909 [44, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (44+1) than incumbent (44), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3607.159090909091 [based on 44 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3564.340909090909 [based on 44 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 67.30000000000045, 3566.311111111111 [45, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+State wants more detail (45+1) than incumbent (45), doing incumbent first:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3607.822222222222 [based on 45 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3566.311111111111 [based on 45 runs with cutoff 1000000000.0])
+ Same incumbent, new precision:
+New Incumbent: 67.50000000000044, 3565.7608695652175 [46, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+          -> After 19 bonus runs for LM: gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3608.1304347826085 [based on 46 runs with cutoff 1000000000.0])
+
+   LM for iteration 11: gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3608.1304347826085 [based on 46 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 11): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 11): gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3565.7608695652175, based on 46 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3608.1304347826085 [based on 46 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3565.7608695652175 [based on 46 runs with cutoff 1000000000.0])
+Incumbent better, keeping it
+rejecting worse gs=20 nc=0.1 ne=0.2 ps=25 xi=0.4 (3608.1304347826085 [based on 46 runs with cutoff 1000000000.0]), going back to gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3565.7608695652175 [based on 46 runs with cutoff 1000000000.0])
+676/1000, 67.60000000000043/100000000.0
+iteration 12, flip 34, evaluation count 676
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=45 xi=0.4 (3677.5 [based on 2 runs with cutoff 1000000000.0])
+    perturb to ---> gs=20 nc=0.6 ne=0.2 ps=45 xi=0.4 (100000000 [based on 0 runs with cutoff 0])
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=45 xi=0.4 (3677.5 [based on 2 runs with cutoff 1000000000.0])
+   BLS in iteration 12, start with gs=20 nc=0.4 ne=0.2 ps=45 xi=0.4 (3661.6666666666665 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.6"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.6 ne=0.2 ps=45 xi=0.4 (3645.6666666666665 [based on 3 runs with cutoff 1000000000.0]) with flip 34
+
+          
+============= Performing 1 bonus runs of state: gs=20 nc=0.6 ne=0.2 ps=45 xi=0.4 (3645.6666666666665 [based on 3 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=20 nc=0.6 ne=0.2 ps=45 xi=0.4 (3644.0 [based on 4 runs with cutoff 1000000000.0])
+
+    Changing ["xi: 0.4->0.2"], evaluating ...
+        -> worse: (3675.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3692.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.6"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.6 ne=0.6 ps=45 xi=0.4 (3628.5 [based on 4 runs with cutoff 1000000000.0]) with flip 35
+
+          
+============= Performing 3 bonus runs of state: gs=20 nc=0.6 ne=0.6 ps=45 xi=0.4 (3628.5 [based on 4 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 3 bonus runs: gs=20 nc=0.6 ne=0.6 ps=45 xi=0.4 (3620.5714285714284 [based on 7 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3669.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 45->35"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.6 ne=0.6 ps=35 xi=0.4 (3593.1428571428573 [based on 7 runs with cutoff 1000000000.0]) with flip 36
+
+          
+============= Performing 2 bonus runs of state: gs=20 nc=0.6 ne=0.6 ps=35 xi=0.4 (3593.1428571428573 [based on 7 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 2 bonus runs: gs=20 nc=0.6 ne=0.6 ps=35 xi=0.4 (3608.8888888888887 [based on 9 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 35->5"], evaluating ...
+        -> worse: (3571.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 35->25"], evaluating ...
+702/1000, 70.20000000000029/100000000.0
+        -> worse: (3610.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.8"], evaluating ...
+        -> worse: (3589.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->70"], evaluating ...
+        -> worse: (3640.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.8"], evaluating ...
+        -> worse: (3634.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.2"], evaluating ...
+        -> worse: (3603.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.2"], evaluating ...
+        -> worse: (3592.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3650.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.1"], evaluating ...
+        -> worse: (3618.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.6"], evaluating ...
+        -> worse: (3621.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.4"], evaluating ...
+        -> worse: (3616.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.6->0.4"], evaluating ...
+        -> worse: (3585.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.6->0.2"], evaluating ...
+        -> worse: (3625.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.6->0.1"], evaluating ...
+        -> worse: (3598.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.6->0.8"], evaluating ...
+        -> worse: (3580.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 35->15"], evaluating ...
+        -> worse: (3575.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->10"], evaluating ...
+        -> worse: (3586.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3603.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3665.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 19 bonus runs of state: gs=20 nc=0.6 ne=0.6 ps=35 xi=0.4 (3608.8888888888887 [based on 9 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 19 bonus runs for LM: gs=20 nc=0.6 ne=0.6 ps=35 xi=0.4 (3609.75 [based on 28 runs with cutoff 1000000000.0])
+
+   LM for iteration 12: gs=20 nc=0.6 ne=0.6 ps=35 xi=0.4 (3609.75 [based on 28 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 12): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 12): gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3565.7608695652175, based on 46 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=20 nc=0.6 ne=0.6 ps=35 xi=0.4 (3609.75 [based on 28 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3565.7608695652175 [based on 46 runs with cutoff 1000000000.0])
+Incumbent better, keeping it
+rejecting worse gs=20 nc=0.6 ne=0.6 ps=35 xi=0.4 (3609.75 [based on 28 runs with cutoff 1000000000.0]), going back to gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3565.7608695652175 [based on 46 runs with cutoff 1000000000.0])
+740/1000, 74.00000000000007/100000000.0
+iteration 13, flip 38, evaluation count 740
+    perturb to ---> gs=20 nc=0.4 ne=0.4 ps=5 xi=0.4 (3583.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=40 nc=0.4 ne=0.4 ps=5 xi=0.4 (100000000 [based on 0 runs with cutoff 0])
+    perturb to ---> gs=40 nc=0.4 ne=0.2 ps=5 xi=0.4 (3600.0 [based on 1 runs with cutoff 1000000000.0])
+   BLS in iteration 13, start with gs=40 nc=0.4 ne=0.2 ps=5 xi=0.4 (3621.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.6"], evaluating ...
+          -> Take improving step to neighbour gs=40 nc=0.4 ne=0.2 ps=5 xi=0.6 (3608.5 [based on 2 runs with cutoff 1000000000.0]) with flip 38
+
+          
+============= Performing 1 bonus runs of state: gs=40 nc=0.4 ne=0.2 ps=5 xi=0.6 (3608.5 [based on 2 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=40 nc=0.4 ne=0.2 ps=5 xi=0.6 (3600.6666666666665 [based on 3 runs with cutoff 1000000000.0])
+
+    Changing ["ne: 0.2->0.6"], evaluating ...
+          -> Take improving step to neighbour gs=40 nc=0.4 ne=0.6 ps=5 xi=0.6 (3559.3333333333335 [based on 3 runs with cutoff 1000000000.0]) with flip 39
+
+          
+============= Performing 1 bonus runs of state: gs=40 nc=0.4 ne=0.6 ps=5 xi=0.6 (3559.3333333333335 [based on 3 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=40 nc=0.4 ne=0.6 ps=5 xi=0.6 (3576.0 [based on 4 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 40->20"], evaluating ...
+        -> worse: (3547.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3776.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 40->70"], evaluating ...
+        -> worse: (3606.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.8"], evaluating ...
+        -> worse: (3577.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 40->10"], evaluating ...
+        -> worse: (3582.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.2"], evaluating ...
+        -> worse: (3614.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.1"], evaluating ...
+        -> worse: (3598.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3647.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.6->0.1"], evaluating ...
+        -> worse: (3743.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.1"], evaluating ...
+        -> worse: (3588.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.4"], evaluating ...
+        -> worse: (3591.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.6->0.4"], evaluating ...
+        -> worse: (3567.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.6->0.8"], evaluating ...
+        -> worse: (3582.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.6->0.2"], evaluating ...
+        -> worse: (3672.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.6->0.8"], evaluating ...
+        -> worse: (3610.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.6"], evaluating ...
+        -> worse: (3638.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3617.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 40->100"], evaluating ...
+        -> worse: (3632.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3605.0 [based on 1 runs with cutoff 1000000000.0])
+          
+============= Performing 19 bonus runs of state: gs=40 nc=0.4 ne=0.6 ps=5 xi=0.6 (3576.0 [based on 4 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 19 bonus runs for LM: gs=40 nc=0.4 ne=0.6 ps=5 xi=0.6 (3588.1304347826085 [based on 23 runs with cutoff 1000000000.0])
+
+   LM for iteration 13: gs=40 nc=0.4 ne=0.6 ps=5 xi=0.6 (3588.1304347826085 [based on 23 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 13): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 13): gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3565.7608695652175, based on 46 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=40 nc=0.4 ne=0.6 ps=5 xi=0.6 (3588.1304347826085 [based on 23 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3565.7608695652175 [based on 46 runs with cutoff 1000000000.0])
+Incumbent better, keeping it
+rejecting worse gs=40 nc=0.4 ne=0.6 ps=5 xi=0.6 (3588.1304347826085 [based on 23 runs with cutoff 1000000000.0]), going back to gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3565.7608695652175 [based on 46 runs with cutoff 1000000000.0])
+786/1000, 78.59999999999981/100000000.0
+iteration 14, flip 41, evaluation count 786
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=25 xi=0.4 (3606.176470588235 [based on 17 runs with cutoff 1000000000.0])
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=45 xi=0.4 (3661.6666666666665 [based on 3 runs with cutoff 1000000000.0])
+    perturb to ---> gs=10 nc=0.4 ne=0.2 ps=45 xi=0.4 (100000000 [based on 0 runs with cutoff 0])
+   BLS in iteration 14, start with gs=10 nc=0.4 ne=0.2 ps=45 xi=0.4 (3634.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 45->5"], evaluating ...
+          -> Take improving step to neighbour gs=10 nc=0.4 ne=0.2 ps=5 xi=0.4 (3561.3333333333335 [based on 3 runs with cutoff 1000000000.0]) with flip 41
+
+          
+============= Performing 1 bonus runs of state: gs=10 nc=0.4 ne=0.2 ps=5 xi=0.4 (3561.3333333333335 [based on 3 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=10 nc=0.4 ne=0.2 ps=5 xi=0.4 (3588.5 [based on 4 runs with cutoff 1000000000.0])
+
+    Changing ["xi: 0.4->0.2"], evaluating ...
+803/1000, 80.29999999999971/100000000.0
+        -> worse: (3604.153846153846 [based on 26 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.1"], evaluating ...
+        -> worse: (3583.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.6"], evaluating ...
+        -> worse: (3586.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+        -> worse: (3640.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3584.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.8"], evaluating ...
+        -> worse: (3601.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.1"], evaluating ...
+        -> worse: (3761.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.2"], evaluating ...
+        -> worse: (3584.151515151515 [based on 33 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->40"], evaluating ...
+        -> worse: (3612.0 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.8"], evaluating ...
+        -> worse: (3621.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.8"], evaluating ...
+        -> worse: (3576.8 [based on 20 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->100"], evaluating ...
+        -> worse: (3624.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 10->20"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3565.7608695652175 [based on 46 runs with cutoff 1000000000.0]) with flip 42
+
+          
+============= Performing 13 bonus runs of state: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3565.7608695652175 [based on 46 runs with cutoff 1000000000.0]) ============ 
+
+ Same incumbent, new precision:
+New Incumbent: 84.89999999999945, 3566.553191489362 [47, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 84.99999999999945, 3565.8541666666665 [48, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 85.09999999999944, 3566.1632653061224 [49, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 85.19999999999943, 3566.6 [50, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 85.29999999999943, 3566.2156862745096 [51, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 85.39999999999942, 3566.403846153846 [52, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 85.49999999999942, 3565.867924528302 [53, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 85.59999999999941, 3565.537037037037 [54, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 85.6999999999994, 3565.690909090909 [55, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 85.7999999999994, 3565.1964285714284 [56, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 85.8999999999994, 3565.8596491228072 [57, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 85.99999999999939, 3567.103448275862 [58, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 86.09999999999938, 3568.35593220339 [59, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+          -> After 13 bonus runs: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3568.35593220339 [based on 59 runs with cutoff 1000000000.0])
+
+    Changing ["ne: 0.2->0.8"], evaluating ...
+        -> worse: (3661.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.8"], evaluating ...
+        -> worse: (3603.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.6"], evaluating ...
+        -> worse: (3641.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.6"], evaluating ...
+        -> worse: (3594.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.1"], evaluating ...
+        -> worse: (3658.25 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.1"], evaluating ...
+        -> worse: (3677.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3609.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3605.8888888888887 [based on 18 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.1"], evaluating ...
+        -> worse: (3594.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3652.5 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.2"], evaluating ...
+        -> worse: (3591.6666666666665 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3597.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.6"], evaluating ...
+        -> worse: (3570.3333333333335 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->70"], evaluating ...
+        -> worse: (3615.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.2"], evaluating ...
+        -> worse: (3643.3333333333335 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+        -> worse: (3594.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.8"], evaluating ...
+        -> worse: (3584.6666666666665 [based on 3 runs with cutoff 1000000000.0])
+          
+============= Performing 17 bonus runs of state: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3568.35593220339 [based on 59 runs with cutoff 1000000000.0]) ============ 
+
+ Same incumbent, new precision:
+New Incumbent: 87.89999999999928, 3568.6666666666665 [60, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 87.99999999999928, 3569.245901639344 [61, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 88.09999999999927, 3570.7258064516127 [62, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 88.19999999999926, 3570.3650793650795 [63, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 88.29999999999926, 3570.53125 [64, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 88.39999999999925, 3570.369230769231 [65, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 88.49999999999925, 3569.5454545454545 [66, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 88.59999999999924, 3569.7014925373132 [67, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 88.69999999999924, 3570.485294117647 [68, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 88.79999999999923, 3570.1884057971015 [69, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 88.89999999999922, 3570.2571428571428 [70, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 88.99999999999922, 3570.760563380282 [71, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 89.09999999999921, 3571.8611111111113 [72, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 89.1999999999992, 3571.4931506849316 [73, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 89.2999999999992, 3571.9189189189187 [74, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 89.3999999999992, 3571.8 [75, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 89.49999999999919, 3572.407894736842 [76, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+          -> After 17 bonus runs for LM: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3572.407894736842 [based on 76 runs with cutoff 1000000000.0])
+
+   LM for iteration 14: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3572.407894736842 [based on 76 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 14): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 14): gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3572.407894736842, based on 76 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3572.407894736842 [based on 76 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3572.407894736842 [based on 76 runs with cutoff 1000000000.0])
+LM better, change incumbent
+New Incumbent: 89.49999999999919, 3572.407894736842 [76, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+same state as last ILS: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3572.407894736842 [based on 76 runs with cutoff 1000000000.0])
+895/1000, 89.49999999999919/100000000.0
+iteration 15, flip 44, evaluation count 895
+    perturb to ---> gs=40 nc=0.4 ne=0.2 ps=5 xi=0.4 (3612.0 [based on 3 runs with cutoff 1000000000.0])
+    perturb to ---> gs=40 nc=0.4 ne=0.2 ps=5 xi=0.1 (100000000 [based on 0 runs with cutoff 0])
+    perturb to ---> gs=20 nc=0.4 ne=0.2 ps=5 xi=0.1 (3677.5 [based on 2 runs with cutoff 1000000000.0])
+   BLS in iteration 15, start with gs=20 nc=0.4 ne=0.2 ps=5 xi=0.1 (3668.6666666666665 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3700.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3725.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.1"], evaluating ...
+        -> worse: (3675.0 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.6"], evaluating ...
+904/1000, 90.39999999999914/100000000.0
+        -> worse: (3740.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.1->0.8"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.4 ne=0.2 ps=5 xi=0.8 (3572.5 [based on 4 runs with cutoff 1000000000.0]) with flip 44
+
+          
+============= Performing 6 bonus runs of state: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.8 (3572.5 [based on 4 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 6 bonus runs: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.8 (3567.3 [based on 10 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3727.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3639.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3606.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.8"], evaluating ...
+        -> worse: (3580.75 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.2"], evaluating ...
+        -> worse: (3645.75 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3628.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.1"], evaluating ...
+        -> worse: (3786.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.8->0.4"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3572.407894736842 [based on 76 runs with cutoff 1000000000.0]) with flip 45
+
+          
+============= Performing 8 bonus runs of state: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3572.407894736842 [based on 76 runs with cutoff 1000000000.0]) ============ 
+
+ Same incumbent, new precision:
+New Incumbent: 92.49999999999902, 3573.051948051948 [77, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 92.59999999999901, 3572.4615384615386 [78, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 92.69999999999901, 3573.2025316455697 [79, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 92.799999999999, 3572.55 [80, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 92.899999999999, 3572.7901234567903 [81, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 92.99999999999899, 3573.3414634146343 [82, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 93.09999999999899, 3572.9036144578313 [83, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 93.19999999999898, 3573.1785714285716 [84, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+          -> After 8 bonus runs: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3573.1785714285716 [based on 84 runs with cutoff 1000000000.0])
+
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3655.2 [based on 5 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.6"], evaluating ...
+        -> worse: (3634.3333333333335 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.2"], evaluating ...
+        -> worse: (3607.5 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->70"], evaluating ...
+        -> worse: (3610.3333333333335 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.6"], evaluating ...
+        -> worse: (3564.75 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3624.3333333333335 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3611.0 [based on 4 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.1"], evaluating ...
+        -> worse: (3601.0 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.4->0.6"], evaluating ...
+        -> worse: (3594.0 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3603.0 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.8"], evaluating ...
+        -> worse: (3578.0 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->25"], evaluating ...
+        -> worse: (3605.684210526316 [based on 19 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.8"], evaluating ...
+        -> worse: (3672.0 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.2->0.4"], evaluating ...
+        -> worse: (3597.6666666666665 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3596.6666666666665 [based on 3 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.4->0.1"], evaluating ...
+        -> worse: (3648.4 [based on 5 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->10"], evaluating ...
+        -> worse: (3579.1428571428573 [based on 35 runs with cutoff 1000000000.0])
+          
+============= Performing 17 bonus runs of state: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3573.1785714285716 [based on 84 runs with cutoff 1000000000.0]) ============ 
+
+ Same incumbent, new precision:
+New Incumbent: 94.99999999999888, 3573.3411764705884 [85, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 95.09999999999887, 3574.1511627906975 [86, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 95.19999999999887, 3574.8275862068967 [87, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 95.29999999999886, 3574.8977272727275 [88, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 95.39999999999885, 3574.9775280898875 [89, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 95.49999999999885, 3574.3444444444444 [90, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 95.59999999999884, 3573.989010989011 [91, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 95.69999999999884, 3574.2608695652175 [92, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 95.79999999999883, 3574.6774193548385 [93, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 95.89999999999883, 3574.31914893617 [94, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 95.99999999999882, 3574.2526315789473 [95, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 96.09999999999881, 3574.2916666666665 [96, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 96.19999999999881, 3574.134020618557 [97, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 96.2999999999988, 3574.0714285714284 [98, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 96.3999999999988, 3573.7676767676767 [99, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 96.49999999999879, 3573.74 [100, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+ Same incumbent, new precision:
+New Incumbent: 96.59999999999879, 3573.8118811881186 [101, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+          -> After 17 bonus runs for LM: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3573.8118811881186 [based on 101 runs with cutoff 1000000000.0])
+
+   LM for iteration 15: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3573.8118811881186 [based on 101 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 15): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 15): gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3573.8118811881186, based on 101 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3573.8118811881186 [based on 101 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3573.8118811881186 [based on 101 runs with cutoff 1000000000.0])
+LM better, change incumbent
+New Incumbent: 96.59999999999879, 3573.8118811881186 [101, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+same state as last ILS: gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3573.8118811881186 [based on 101 runs with cutoff 1000000000.0])
+966/1000, 96.59999999999879/100000000.0
+iteration 16, flip 47, evaluation count 966
+    perturb to ---> gs=20 nc=0.4 ne=0.1 ps=5 xi=0.4 (3601.0 [based on 3 runs with cutoff 1000000000.0])
+    perturb to ---> gs=20 nc=0.2 ne=0.1 ps=5 xi=0.4 (3647.0 [based on 1 runs with cutoff 1000000000.0])
+    perturb to ---> gs=20 nc=0.2 ne=0.1 ps=5 xi=0.1 (100000000 [based on 0 runs with cutoff 0])
+   BLS in iteration 16, start with gs=20 nc=0.2 ne=0.1 ps=5 xi=0.1 (3740.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.1->0.2"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.2 ne=0.1 ps=5 xi=0.2 (3635.0 [based on 1 runs with cutoff 1000000000.0]) with flip 47
+
+          
+============= Performing 1 bonus runs of state: gs=20 nc=0.2 ne=0.1 ps=5 xi=0.2 (3635.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 1 bonus runs: gs=20 nc=0.2 ne=0.1 ps=5 xi=0.2 (3586.5 [based on 2 runs with cutoff 1000000000.0])
+
+    Changing ["gs: 20->100"], evaluating ...
+        -> worse: (3646.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3621.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.6"], evaluating ...
+        -> worse: (3625.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.8"], evaluating ...
+        -> worse: (3681.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->35"], evaluating ...
+        -> worse: (3681.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["xi: 0.2->0.4"], evaluating ...
+        -> worse: (3605.5 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.1->0.2"], evaluating ...
+        -> worse: (3599.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.2->0.6"], evaluating ...
+          -> Take improving step to neighbour gs=20 nc=0.6 ne=0.1 ps=5 xi=0.2 (3586.0 [based on 2 runs with cutoff 1000000000.0]) with flip 48
+
+          
+============= Performing 8 bonus runs of state: gs=20 nc=0.6 ne=0.1 ps=5 xi=0.2 (3586.0 [based on 2 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 8 bonus runs: gs=20 nc=0.6 ne=0.1 ps=5 xi=0.2 (3580.9 [based on 10 runs with cutoff 1000000000.0])
+
+    Changing ["xi: 0.2->0.8"], evaluating ...
+        -> worse: (3581.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->45"], evaluating ...
+        -> worse: (3756.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.1->0.8"], evaluating ...
+        -> worse: (3669.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["gs: 20->40"], evaluating ...
+        -> worse: (3592.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.1->0.4"], evaluating ...
+        -> worse: (3636.0 [based on 2 runs with cutoff 1000000000.0])
+    Changing ["nc: 0.6->0.8"], evaluating ...
+        -> worse: (3611.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ps: 5->15"], evaluating ...
+        -> worse: (3582.0 [based on 1 runs with cutoff 1000000000.0])
+    Changing ["ne: 0.1->0.6"], evaluating ...
+        -> worse: (3597.0 [based on 2 runs with cutoff 1000000000.0])
+ParamILS has reached the specified maximum number of 1000 function evaluations => stopping the search now.
+          
+============= Performing 8 bonus runs of state: gs=20 nc=0.6 ne=0.1 ps=5 xi=0.2 (3580.9 [based on 10 runs with cutoff 1000000000.0]) ============ 
+
+ParamILS has reached the specified maximum number of 1000 function evaluations => stopping the search now.
+          -> After 8 bonus runs for LM: gs=20 nc=0.6 ne=0.1 ps=5 xi=0.2 (3580.9 [based on 10 runs with cutoff 1000000000.0])
+
+   LM for iteration 16: gs=20 nc=0.6 ne=0.1 ps=5 xi=0.2 (3580.9 [based on 10 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 16): ==========
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 16): gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 3573.8118811881186, based on 101 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=20 nc=0.6 ne=0.1 ps=5 xi=0.2 (3580.9 [based on 10 runs with cutoff 1000000000.0])
+gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3573.8118811881186 [based on 101 runs with cutoff 1000000000.0])
+Incumbent better, keeping it
+rejecting worse gs=20 nc=0.6 ne=0.1 ps=5 xi=0.2 (3580.9 [based on 10 runs with cutoff 1000000000.0]), going back to gs=20 nc=0.4 ne=0.2 ps=5 xi=0.4 (3573.8118811881186 [based on 101 runs with cutoff 1000000000.0])
+ParamILS has reached the specified maximum number of 1000 function evaluations => stopping the search now.
+Final solution for depth 1 with limit N=2000, and cutoff time=1000000000.0.
+New Incumbent: 99.9999999999986, 3573.8118811881186 [101, 1000000000.0]. With state gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+
+==================================================================
+ParamILS is finished.
+==================================================================
+
+Final best parameter configuration found: gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+==================================================================
+Active parameters: gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+
+==================================================================
+Training quality of this final best found parameter configuration: 3573.8118811881186, based on 101 runs with cutoff 1000000000.0
+==================================================================
+
+
+==================================================================
+Computing validation result on independent data -- 0 runs with cutoff time 1000000000.0...
+==================================================================
+Combined result: 1000000000000000000
+
+================================================================
+Final best parameter configuration: gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+==================================================================
+Active parameters: gs=20, nc=0.4, ne=0.2, ps=5, xi=0.4
+
+================================================================
+Training quality of this final best found parameter configuration: 3573.8118811881186, based on 101 runs with cutoff 1000000000.0
+Test quality of this final best found parameter configuration: 1000000000000000000, based on 0 independent runs with cutoff 1000000000.0
+==================================================================
