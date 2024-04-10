@@ -1,0 +1,77 @@
+max wall time = 8640000
+/home/elizabeth/Tomas/CVRPTW-EDA/Tesis/solomon_execution/_1_1/_C202_baseTuning/SolveVRP.params
+5 parameters in total
+0 parameters are conditional.
+0 parameter combinations are forbidden.
+num_params = 5, num_combos=3125
+seed: 1234
+Run 1
+Level 
+========================================================
+Starting ILS for level 1, i.e. a limit of N=2000, and cutoff time=1000000000.0.
+Current CPU time = 0, this run goes until 100000000.0 
+========================================================
+New Incumbent: 0, 100000000 [0, 0]. With state gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+getAlgoResultsForInstsAndParams.
+  Trial 1 for calling: bash SolveVRP.sh ../../solomon/C202.txt "" 1000000000.0000001 2147483647 822569775 -gs 40 -nc 0.4 -ne 0.4 -ps 25 -xi 0.4 > /tmp/tmp-2024-04-1012:37:17-0.7162938117980957
+Executing cmd: bash SolveVRP.sh ../../solomon/C202.txt "" 1000000000.0000001 2147483647 822569775 -gs 40 -nc 0.4 -ne 0.4 -ps 25 -xi 0.4 > /tmp/tmp-2024-04-1012:37:17-0.7162938117980957
+Result: SAT, 0, 590, 0, 822569775
+ Same incumbent, new precision:
+New Incumbent: 0.1, 590.0 [1, 1000000000.0]. With state gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+ParamILS has reached the specified maximum number of 1 function evaluations => stopping the search now.
+   BLS in iteration 1, start with gs=40 nc=0.4 ne=0.4 ps=25 xi=0.4 (590.0 [based on 1 runs with cutoff 1000000000.0])
+ParamILS has reached the specified maximum number of 1 function evaluations => stopping the search now.
+          
+============= Performing 0 bonus runs of state: gs=40 nc=0.4 ne=0.4 ps=25 xi=0.4 (590.0 [based on 1 runs with cutoff 1000000000.0]) ============ 
+
+          -> After 0 bonus runs for LM: gs=40 nc=0.4 ne=0.4 ps=25 xi=0.4 (590.0 [based on 1 runs with cutoff 1000000000.0])
+
+   LM for iteration 1: gs=40 nc=0.4 ne=0.4 ps=25 xi=0.4 (590.0 [based on 1 runs with cutoff 1000000000.0])
+
+========== DETAILED RESULTS (iteration 1): ==========
+[["SAT", 0.0, 590, 0.0, 822569775]]
+../../solomon/C202.txt: 590		[based on 1 runs]
+================================================
+
+==================================================================
+Best parameter configuration found so far (end of iteration 1): gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+==================================================================
+Training quality of this incumbent parameter configuration: 590.0, based on 1 runs with cutoff 1000000000.0
+==================================================================
+
+Comparing LM against incumbent:
+gs=40 nc=0.4 ne=0.4 ps=25 xi=0.4 (590.0 [based on 1 runs with cutoff 1000000000.0])
+gs=40 nc=0.4 ne=0.4 ps=25 xi=0.4 (590.0 [based on 1 runs with cutoff 1000000000.0])
+LM better, change incumbent
+New Incumbent: 0.1, 590.0 [1, 1000000000.0]. With state gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+ParamILS has reached the specified maximum number of 1 function evaluations => stopping the search now.
+Final solution for depth 1 with limit N=2000, and cutoff time=1000000000.0.
+New Incumbent: 0.1, 590.0 [1, 1000000000.0]. With state gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+
+==================================================================
+ParamILS is finished.
+==================================================================
+
+Final best parameter configuration found: gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+==================================================================
+Active parameters: gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+
+==================================================================
+Training quality of this final best found parameter configuration: 590.0, based on 1 runs with cutoff 1000000000.0
+==================================================================
+
+
+==================================================================
+Computing validation result on independent data -- 0 runs with cutoff time 1000000000.0...
+==================================================================
+Combined result: 1000000000000000000
+
+================================================================
+Final best parameter configuration: gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+==================================================================
+Active parameters: gs=40, nc=0.4, ne=0.4, ps=25, xi=0.4
+
+================================================================
+Training quality of this final best found parameter configuration: 590.0, based on 1 runs with cutoff 1000000000.0
+Test quality of this final best found parameter configuration: 1000000000000000000, based on 0 independent runs with cutoff 1000000000.0
+==================================================================

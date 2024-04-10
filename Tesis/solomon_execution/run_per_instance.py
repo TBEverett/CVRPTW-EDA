@@ -11,7 +11,7 @@ max_evals = os.getenv("PARAMILS_MAXEVALS")
 folder_name = "_"+time+"_"+max_evals
 subprocess.run(["mkdir",folder_name])
 
-NTHREADS = 10
+NTHREADS =  os.getenv("NTHREADS")
 
 instance_group = "solomon"
 
