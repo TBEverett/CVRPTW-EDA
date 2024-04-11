@@ -1,9 +1,9 @@
 #/bin/bash
 
-seed=0 #Por ahora hardcodeado el seed
 instance=$1
 instance_group=$2
 folder_name=$3
+seed=$4
 
 #Copiamos los contenidos de baseTuning
 #Antes se copiaba todo baseTuning, pero ahora son muchos directorios, asi que es mejor
