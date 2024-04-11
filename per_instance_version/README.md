@@ -1,0 +1,1 @@
+nohup python3 run_per_instance.py > python_output.txt &
