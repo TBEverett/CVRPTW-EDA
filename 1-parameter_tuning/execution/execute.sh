@@ -15,7 +15,7 @@ cp -r ${baseDir}/* ${newDir}/
 cd ${newDir}
 
 #Modificamos scn e inst para que trabajen sobre una sola instancia en particular
-sed -i 's/Homberger.inst/single.inst/' scn/SolveVRP.scn
+sed -i s/${instance_group}.inst/single.inst/ scn/SolveVRP.scn
 echo ../../${instance_group}/${instance}.txt >> "inst/single.inst"
 
 bash ToDoParamILS.sh toTune/SolveVRP.tune ${seed} _${instance}_${baseDir} > OUT

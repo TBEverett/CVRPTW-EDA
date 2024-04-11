@@ -7,13 +7,11 @@ load_dotenv()
 
 time = os.getenv("SOLVEVRP_TIME_LIMIT")
 max_evals = os.getenv("PARAMILS_MAXEVALS")
+instance_group = os.getenv("INSTANCE_SET")
+NTHREADS = int(os.getenv("NTHREADS"))
 
-folder_name = "_"+time+"_"+max_evals
+folder_name = "_"+instance_group+"_"+time+"_"+max_evals
 subprocess.run(["mkdir",folder_name])
-
-NTHREADS =  os.getenv("NTHREADS")
-
-instance_group = "solomon"
 
 #Obtenemos lista de instancias
 instances_with_sols = os.listdir(instance_group)
@@ -58,7 +56,7 @@ for dir in dirs:
                                                 l[8].strip("xi=,")]})
     results_file.close()
 
-output_file_name = "best_params_" + time + "_" + max_evals + ".csv"
+output_file_name = "results/_" + instance_group + "_best_params_" + time + "_" + max_evals + ".csv"
 output_file = open(output_file_name,"a")
 if os.path.getsize(output_file_name) == 0: #Si archivo esta vacio agregamos enunciado
     output_file.write("time,maxevals,instance,gs,nc,ne,ps,xi\n")

@@ -9,6 +9,10 @@ from pyvrp.diversity import broken_pairs_distance
 from pyvrp.crossover import selective_route_exchange as srex
 from pyvrp.stop import MaxRuntime
 import argparse
+import os
+
+from dotenv import load_dotenv
+load_dotenv("../.env")
 
 # Ej de linea de ejecucion
 # python3 SolveVRP.py -i solomon/RC208.txt -ps 25 -gs 40 -ne 0.1 -nc 0.1 -xi 0.4 -t 10 -s 42
@@ -26,7 +30,7 @@ parser.add_argument("-t", "--time", type=int)
 parser.add_argument("-s", "--seed", type=int)
 args = parser.parse_args()
 
-#Leemos instancia
+#Leemos instancia (homberger tambien es formato solomon)
 INSTANCE = p.read(args.instance, "solomon", "round")
 
 #Creamos nuestra propia función solve que acepta parametros de poblacion
