@@ -10,10 +10,12 @@ time = os.getenv("SOLVEVRP_TIME_LIMIT")
 max_evals = os.getenv("PARAMILS_MAXEVALS")
 instance_group = os.getenv("INSTANCE_SET")
 NTHREADS = int(os.getenv("NTHREADS"))
-seeds = [str(random.randint(1,10000)) for i in range(10)]
+NSEEDS = int(os.getenv("NSEEDS"))
+seeds = [str(random.randint(1,10000)) for i in range(NSEEDS)]
 
 #Ejecutamos todo el procedimiento para 10 seeds distintos:
 for seed in seeds:
+    #Creamos carpeta para almacenar ejecuciones de paramILS
     folder_name = "_"+instance_group+"_time:"+time+"_evals:"+max_evals+"_seed:"+seed
     subprocess.run(["mkdir",folder_name])
 
@@ -22,6 +24,7 @@ for seed in seeds:
     instances = [file.replace(".txt","") for file in instances_with_sols if ".sol" not in file]
     instance_amount_per_thread = len(instances)//NTHREADS
 
+    #Funcion para ejecutar paramILS en paralelo
     def threaded_paramILS(offset):
         for i in range(instance_amount_per_thread):
             #Ejecutamos paramILS, almacenando todo en un directorio para esa instancia
@@ -29,6 +32,7 @@ for seed in seeds:
                 break
             subprocess.run(["bash","execute.sh",instances[i + offset],instance_group,folder_name,seed])
 
+    #Ejecutamos cada hilo
     threads = list()
     for thread_id in range(NTHREADS + 2):
         offset = thread_id*instance_amount_per_thread
@@ -36,6 +40,7 @@ for seed in seeds:
         threads.append(x)
         x.start()
 
+    #Esperamos cada hilo
     for index, thread in enumerate(threads):
         thread.join() 
 
