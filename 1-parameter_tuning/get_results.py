@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 #Conjunto de resultados con el que trabajaremos
-time="10"
+time="30"
 os.chdir("/home/elizabeth/Tomas/CVRPTW-EDA/1-parameter_tuning")
 
 #Creamos un diccionario con todos los resultados de cada instancia y para cada seed.
