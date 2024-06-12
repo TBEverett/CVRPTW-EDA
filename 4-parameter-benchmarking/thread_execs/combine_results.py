@@ -4,8 +4,8 @@ import numpy as np
 
 files = os.listdir(".")
 files = [f for f in files if "output" in f]
-seeds = [1,2,3,4,5]
-times = [10,30]
+seeds = [1,2]
+times = [1]
 threads = list(range(40))
 #Obtenemos la eval promedio entre seeds
 for thread in threads:
@@ -48,4 +48,3 @@ for f in files:
             results_per_group.loc[len(results_per_group.index)] = [s,group,int(group_mean)]
     os.remove(f"results/{f}")
     results_per_group.to_csv(f"results/{f}",index=False,header=False)
-exit()
